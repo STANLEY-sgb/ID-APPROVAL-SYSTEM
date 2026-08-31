@@ -1,0 +1,59 @@
+# ============================================================
+# Mengo Hospital ID Approval System — .gitignore
+# ============================================================
+
+# ──────────────────────────────────────────
+# Environment & Secrets (NEVER commit these)
+# ──────────────────────────────────────────
+.env
+*.env.local
+*.env.*.local
+
+# ──────────────────────────────────────────
+# Runtime / User-generated data
+# ──────────────────────────────────────────
+storage/database/
+storage/uploads/
+storage/temp/
+storage/backups/
+
+# ──────────────────────────────────────────
+# PHP / Composer
+# ──────────────────────────────────────────
+vendor/
+composer.lock
+
+# ──────────────────────────────────────────
+# OS / Editor artefacts
+# ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ──────────────────────────────────────────
+# Logs
+# ──────────────────────────────────────────
+*.log
+logs/
+
+# ──────────────────────────────────────────
+# PDF source files in project root (uploaded employee IDs)
+# These are stored in storage/, not the project root
+# ──────────────────────────────────────────
+/*.pdf
+/*.png
+/*.jpg
+/*.jpeg
+
+# ──────────────────────────────────────────
+# Session / Cache
+# ──────────────────────────────────────────
+session/
+cache/
